@@ -14,7 +14,7 @@ export const Controler = () => {
   }
   return (
     <div className="controler" style={pos}>
-        <input type="range"  id="pogBar" style={{width:"100%"}}/>
+        <input type="range"  id="pogBar" min={0} value={0} max={100} style={{width:"100%",backgroundColor:"green"}}/>
         <div className="butt" style={pos1} >
           <button style={{height:"50px",width:"90px",borderRadius:"5px"}}>Previous</button>
           <button style={{height:"50px",width:"90px",borderRadius:"5px"}}>Play/Pause</button>

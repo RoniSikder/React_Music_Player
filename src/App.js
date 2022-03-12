@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
+import { Controler } from './components/Controler';
 import { Navbar } from './components/Navbar';
 import { SongList } from './components/SongList';
-import { Controler } from './components/Controler';
 
 function App() {
   return (
