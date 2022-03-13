@@ -1,17 +1,17 @@
 import React from 'react'
 
-export const Songs = () => {
+export const Songs = ({propa}) => {
     let songList = [
-        {name: "Let Me Love You", path:"src\Songs\Let Me Love You.mp3"},
-        {name:"Shape Of You",path:"src\Songs\Shape of You.mp3"},
-        {name:"Ignite",path:"src\Songs\Coldplay.mp3"},
-        {name:"Lily",path:"src\Songs\Lily.mp3"},
-        {name:"Diamond Hearts",path:"src\Songs\Diamond Heart.mp3"}
+        {name: "Let Me Love You", path:"../Songs/Let Me Love You.mp3"},
+        {name:"Shape Of You",path:"../Songs/Shape of You.mp3"},
+        {name:"Ignite",path:"../Songs/Coldplay.mp3"},
+        {name:"Lily",path:"../Songs/Lily.mp3"},
+        {name:"Diamond Hearts",path:"../Songs/Diamond Heart.mp3"}
     ]
-
-    let plays=()=>{
-
-    }
+    console.log(songList[propa].name);
+    let song=new Audio(songList[propa].path)
+    song.play();
+    
   return (
     <>
 
