@@ -11,31 +11,36 @@ export const SongList = () => {
         fontSize:"30px"
     }
     let assign=0;
+    let reada=(number)=>{
+        // e.preventDefault();
+        assign=number;
+        console.log(assign);
+    }
   return (
       <>
     <div className="container">
         <div className='songs' style={pos}>
             <span>Let Me Love You</span>
-            <button onClick={assign=0} style={{border:"none",backgroundColor:"transparent"}}>Play</button>    
+            <button onClick={()=>reada(0)} style={{border:"none",backgroundColor:"transparent"}}>Play</button>    
         </div>
         <div className='songs' style={pos}>
             <span>Shape of You</span>
-            <button onClick={assign=1} style={{border:"none",backgroundColor:"transparent"}}>Play</button>    
+            <button onClick={()=>reada(1)} style={{border:"none",backgroundColor:"transparent"}}>Play</button>    
         </div>
         <div className='songs' style={pos}>
             <span>Ignite</span>
-            <button onClick={assign=2} style={{border:"none",backgroundColor:"transparent"}}>Play</button>    
+            <button onClick={()=>reada(2)} style={{border:"none",backgroundColor:"transparent"}}>Play</button>    
         </div>
         <div className='songs' style={pos}>
             <span>Lily</span>
-            <button onClick={assign=3} style={{border:"none",backgroundColor:"transparent"}}>Play</button>    
+            <button onClick={()=>reada(3)} style={{border:"none",backgroundColor:"transparent"}}>Play</button>    
         </div>
         <div className='songs' style={pos}>
             <span>Diamond Hearts</span>
-            <button onClick={assign=4} style={{border:"none",backgroundColor:"transparent"}}>Play</button>    
+            <button onClick={()=>reada(4)} style={{border:"none",backgroundColor:"transparent"}}>Play</button>    
         </div>
     </div>
-    <Songs/>
+    <Songs propa={assign} />
     </>
   )
 }
