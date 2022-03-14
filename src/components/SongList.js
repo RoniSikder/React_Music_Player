@@ -10,15 +10,15 @@ export const SongList = () => {
         justifyContent:"space-between",
         fontSize:"30px"
     }
-    // let [decide,setdic]=useState(false);
     let reada=(number)=>{
         // e.preventDefault();
-        // setdic(true);
         setNumber(number);
-
         console.log(holder);
     }
+
     let [holder,setNumber]=useState(0);
+
+
   return (
       <>
     <div className="container">
@@ -42,6 +42,7 @@ export const SongList = () => {
             <span>Diamond Hearts</span>
             <button onClick={()=>reada(4)} style={{border:"none",backgroundColor:"transparent"}}>Play</button>    
         </div>
+        <span>{holder}</span>
     </div>
     <Songs propa={holder} />
     </>
