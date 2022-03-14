@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Songs } from './Songs';
 
 export const SongList = () => {
@@ -10,12 +10,15 @@ export const SongList = () => {
         justifyContent:"space-between",
         fontSize:"30px"
     }
-    let assign=0;
+    // let [decide,setdic]=useState(false);
     let reada=(number)=>{
         // e.preventDefault();
-        assign=number;
-        console.log(assign);
+        // setdic(true);
+        setNumber(number);
+
+        console.log(holder);
     }
+    let [holder,setNumber]=useState(0);
   return (
       <>
     <div className="container">
@@ -40,7 +43,7 @@ export const SongList = () => {
             <button onClick={()=>reada(4)} style={{border:"none",backgroundColor:"transparent"}}>Play</button>    
         </div>
     </div>
-    <Songs propa={assign} />
+    <Songs propa={holder} />
     </>
   )
 }
