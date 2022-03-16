@@ -1,14 +1,14 @@
 import './App.css';
 import { Controler } from './components/Controler';
 import { Navbar } from './components/Navbar';
-import { SongList } from './components/SongList';
+import { Songs } from './components/Songs';
 
 function App() {
   return (
     <>
       <Navbar/>
-      <SongList/>
-      <Controler/>
+      <Songs/>
+      {/* <Controler/> */}
     </>
   );
 }
